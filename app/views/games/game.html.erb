@@ -1,10 +1,20 @@
-<h2>******** Welcome to the longest word-game !********</h2>
-<h3>Here is your grid :</h3>
-<h3><%= @grid %></h3>
-<h3>*****************************************************</h3>
-<form class ="text-center" action="/results">
-  <h3><label for="answer">What is your best shot?</label></h3>
-  <input type="hidden" name="grid" value="<%= @grid %>">
-  <input type="text" id="answer" name="answer" placeholder="Guess.....">
-  <input type="submit" class="btn btn-primary" value="Submit!">
-</form>
+<div class="row">
+  <div class="col-xs-6 col-xs-offset-3 text-center">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">Welcome to the longest word-game!</h3>
+        </div>
+        <div class="panel-body">
+        <h5>Here is your grid:</h5>
+          <h5><%= @grid %></h5>
+          <form class ="text-center" action="/results">
+            <h5>What is your best shot?</h5>
+            <input type="hidden" name="grid" value="<%= @grid %>">
+            <input type="text" id="answer" name="answer" placeholder="Guess.....">
+            <input type="submit" class="btn btn-primary" id="form-btn" value="Submit!">
+          </form>
+        </div>
+      </div>
+    </div>
+</div>
+
