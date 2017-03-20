@@ -4,13 +4,16 @@
       <div class="panel-heading">
         <h3 class="panel-title">Your results!</h3>
         </div>
+        <div class="panel-body">
+        <table class="table table-striped">
     <h5>Your word: <%= @answer %></h5>
     <h5>Time Taken to answer: <%= $time_taken %></h5>
     <h5>Translation: <%= @results[:translation] %></h5>
     <h5>Your score: <%= @results[:score] %></h5>
     <h5>Message: <%= @results[:message] %></h5>
+    </table>
     <%= link_to "Try again", game_path, :class => "btn btn-primary" %>
-    <br>
+    </div>
   </div>
 </div>
 </div>
